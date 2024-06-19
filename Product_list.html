@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product_list</title>
+    <link rel="icon" href="https://en.sailor.co.jp/wp-content/themes/sailor-en/img/favicon.ico">
+    <!------ 스타일시트 적용 ------>
+    <link rel="stylesheet" href="css/Product_list.css">
+    <!------ 메인타이틀 폰트, 전체 폰트↓ ------>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+    </style>
+    <!------ 로그인 팝업창 ------>
+    <script>
+        function openPopup() {
+            var width = 600; // 작은 창의 너비
+            var height = 840; // 작은 창의 높이
+            var left = (window.innerWidth - width) / 2; // 가로 가운데 정렬을 위한 좌표
+            var top = (window.innerHeight - height) / 2; // 세로 가운데 정렬을 위한 좌표
+            var url = 'login_page.html'; // 열고자 하는 HTML 파일의 경로
+
+            // 작은 창 열기
+            var popupWindow = window.open(url, 'popupWindow', 'width=' + width + ',height=' + height + ',left=' + left + ',top=' + top);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="product_list">
+        <header>
+            <h1 class="title_Fountain pen">
+                <a href="Main_home.html" target="_self">Fountain
+                    pen</a>
+            </h1>
+            <div class="top_menu">
+                <a class="top_right" href="#" onclick="openPopup()">로그인</a>
+                <div class="top_right">|</div>
+                <a class="top_right" href="#">장바구니</a>
+            </div>
+        </header>
+        <nav class="menu_box_1">
+            <ul class="menu_1">
+
+                <li><a class="" href="#">만년필</a></li>
+                <li><a class="" href="#">잉크</a></li>
+                <li><a class="" href="#">노트</a></li>
+            </ul>
+        </nav>
+        <nav class="select_menu">
+            <ul>
+                <li><a href="#">낮은 가격순</a></li>
+                <li><a href="#">높은 가격순</a></li>
+                <li><a href="#">판매량순</a></li>
+                <li><a href="#">추천순</a></li>
+            </ul>
+        </nav>
+
+        <!-------- main	 -------->
+        <main class="main_contents">
+            <div class="main_ct ct_box_1">
+                <h3>SHIKIORI SETSUGETSU SORAHA</h3>
+                <div class="pd_list">
+                    <div class="pd">
+                        <a href="Detail_Page.html">
+                            <img src="img/SHIKIORI SETSUGETSU SORAHA_sagye/SHIKIORI_sagye1.jpg" alt="">
+                            <div class=pd_name>SHIKIORI</div>
+                        </a>
+                    </div>
+                    <div class="pd">
+                        <a href="Detail_Page.html">
+                            <img src="img/SHIKIORI SETSUGETSU SORAHA_sagye/SHIKIORI_sagye1.jpg" alt="">
+                            <div class=pd_name>SHIKIORI</div>
+                        </a>
+                    </div>
+                    <div class="pd">
+                        <a href="Detail_Page.html">
+                            <img src="img/SHIKIORI SETSUGETSU SORAHA_sagye/SHIKIORI_sagye1.jpg" alt="">
+                            <div class=pd_name>SHIKIORI</div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="main_ct ct_box_2">
+                <h3>Fairy Tale series</h3>
+                <div class="pd_list">
+                    <div class="pd">
+                        <a href="#">
+                            <img src="img/SHIKIORI SETSUGETSU SORAHA_sagye/SHIKIORI_sagye1.jpg" alt="">
+                            <div class=pd_name>SHIKIORI</div>
+                        </a>
+                    </div>
+                    <div class="pd">
+                        <a href="#">
+                            <img src="img/SHIKIORI SETSUGETSU SORAHA_sagye/SHIKIORI_sagye1.jpg" alt="">
+                            <div class=pd_name>SHIKIORI</div>
+                        </a>
+                    </div>
+                    <div class="pd">
+                        <a href="#">
+                            <img src="img/SHIKIORI SETSUGETSU SORAHA_sagye/SHIKIORI_sagye1.jpg" alt="">
+                            <div class=pd_name>SHIKIORI</div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- 	pd1 완성 후 복붙하기	 -->
+
+            </div>
+
+        </main> <!-- main 끝 -->
+
+        <!-------- footer	 -------->
+        <footer>
+            <section>
+                <div class="ft_info info_1">
+                    <div>고객센터</div>
+                    <div>000-000-0000</div>
+                </div>
+                <div class="ft_info info_2">
+                    <div>은행</div>
+                    <div>000000-000-000000</div>
+                </div>
+            </section>
+            <div class="ft_info info_3">
+                <span><a href="#">이용약관 &nbsp;</a></span>
+                <span><a href="#">개인정보처리방침 &nbsp;</a></span>
+                <span><a href="#">회사정보 &nbsp;</a></span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

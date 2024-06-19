@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Detail_Page</title>
+	<link rel="icon" href="https://en.sailor.co.jp/wp-content/themes/sailor-en/img/favicon.ico">
+	<!-- 스타일시트 적용 -->
+	<link rel="stylesheet" href="css/Detail_Page.css">
+	<!------ 폰트어썸 ------>
+	<script src="https://kit.fontawesome.com/c56732103f.js" crossorigin="anonymous"></script>
+	<!-- 메인타이틀 폰트, 전체 폰트 -->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+	</style>
+	<!------ 로그인 팝업창 ------>
+	<script>
+		function openPopup() {
+			var width = 600; // 작은 창의 너비
+			var height = 840; // 작은 창의 높이
+			var left = (window.innerWidth - width) / 2; // 가로 가운데 정렬을 위한 좌표
+			var top = (window.innerHeight - height) / 2; // 세로 가운데 정렬을 위한 좌표
+			var url = 'login_page.html'; // 열고자 하는 HTML 파일의 경로
+
+			// 작은 창 열기
+			var popupWindow = window.open(url, 'popupWindow', 'width=' + width + ',height=' + height + ',left=' + left + ',top=' + top);
+		}
+	</script>
+	<title>Product list</title>
+</head>
+
+<body>
+	<div id="product_page">
+		<header>
+			<h1 class="title_Fountain pen">
+				<a href="Main_home.html" target="_self">Fountain
+					pen</a>
+			</h1>
+			<div class="top_menu">
+				<a class="top_right" href="#" onclick="openPopup()">로그인</a>
+				<div class="top_right">|</div>
+				<!-- <div class="top_right"><img src="img/icon/shopping_cart_icon_17_19.png" alt=""></div> -->
+				<a class="top_right" href="#">장바구니</a>
+			</div>
+		</header>
+		<nav class="menu_box_1">
+			<ul class="menu_1">
+				<li><a class="" href="Product_list.html">만년필</a></li>
+				<li><a class="" href="#">잉크</a></li>
+				<li><a class="" href="#">노트</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section class="contents ct1">
+				<div class="pd_buy">
+					<span><img src="img/SHIKIORI SETSUGETSU SORAHA_sagye/SHIKIORI_sagye1.jpg" alt=""></span>
+					<div class="table">
+						<table>
+							<tr>
+								<th class="tb_left">상품명</th>
+								<td class="tb_right">SHIKIORI SETSUGETSU SORAHA Fountain Pen
+								</td>
+							</tr>
+							<tr>
+								<th class="tb_left">가격</th>
+								<td class="tb_right"> <span>210,000원</span></td>
+							</tr>
+							<tr>
+								<th class="tb_left">배송비</th>
+								<td class="tb_right">무료</td>
+							</tr>
+							<tr class="option">
+								<th class="tb_left">옵션</th>
+								<td class="td_select">
+									<select>
+										<option value="" disabled selected class="option_select">&nbsp; - - 옵션을 선택해주세요 -
+											-
+										</option>
+										<option value="option1">옵션1</option>
+										<option value="option2">옵션2</option>
+										<option value="option3">옵션3</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="buy" >
+									<button>구매하기</button>
+									<span class="Favorite_item"><i class="fa-solid fa-heart"></i></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</section>
+			<hr>
+			<section class="contents ct2">
+				<div class="pd_detail_img">
+					<img src="img/SHIKIORI SETSUGETSU SORAHA_sagye/SHIKIORI SETSUGETSU SORAHA_detail.jpg" alt="">
+				</div>
+			</section>
+			
+		</main>
+		<footer>
+			<section>
+				<div class="ft_info info_1">
+					<div>고객센터</div>
+					<div>000-000-0000</div>
+				</div>
+				<div class="ft_info info_2">
+					<div>은행</div>
+					<div>000000-000-000000</div>
+				</div>
+			</section>
+			<div>
+
+
+			</div>
+			<div class="ft_info info_3">
+				<span><a href="#">이용약관 &nbsp;</a></span>
+				<span><a href="#">개인정보처리방침 &nbsp;</a></span>
+				<span><a href="#">회사정보 &nbsp;</a></span>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

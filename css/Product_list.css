@@ -1,0 +1,271 @@
+/* 노멀라이즈 */
+body, ul, li, h1, h3 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* 폰트 설정 */
+/* 전체 폰트 */
+.top_menu, nav, #product_list>main, footer {
+	box-sizing: border-box;
+	font-family: "Noto Sans KR", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
+	color: #110B08;
+}
+/* h1 폰트 */
+header>h1 {
+	font-family: "Poetsen One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #0C0806;
+}
+
+/* 커스텀 */
+body {
+	background-color: #fffef8;
+}
+body>#product_list {
+	width: 100%;
+	/* 	height: 5000px; */
+	margin: 0 auto;
+}
+
+/********** header **********/
+header {
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	border-bottom: 1px solid #dfdfdf;
+	box-sizing: border-box;
+}
+header>h1 {
+	font-size: 80px;
+	white-space: nowrap;
+}
+.top_menu {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 14px;
+}
+
+header > .top_menu > a:first-child, 
+header > .top_menu > a:last-child {
+	margin: 0 5px;
+}
+.top_right {
+	margin: 0 2px;
+}
+header > .top_menu > div {
+	display: flex;
+	align-items: center;
+	padding-bottom: 1px;
+}
+
+/********** header 끝 **********/
+
+/************ menu_box_1 시작 ************/
+.menu_box_1 {
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+.menu_box_1>ul {
+	display: flex;
+}
+
+.menu_box_1>ul>li {
+	width: 150px;
+	height: 40px;
+	margin: 10px;
+	/* 	padding: 5px; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.menu_box_1>ul>li>a {
+	display: block;
+	font-size: 24px;
+}
+
+.menu_box_1 li:hover {
+	color: #6D8CC7;
+	background-color: #efefef;
+	border: 1px solid #6D8CC7;
+	border-radius: 5px;
+	box-sizing: border-box;
+	position: relative;
+	top: 1px;
+}
+
+/************ menu_box_1 끝 ************/
+
+/************ select_menu 시작  ************/
+.select_menu {
+	margin: 60px 0 40px 0;
+	font-size: 12px;
+}
+
+.select_menu>ul {
+	display: flex;
+	justify-content: center;
+	/* background-color: #fffeeb; */
+	/* font-size: 14px; */
+}
+
+.select_menu>ul>li {
+	width: 150px;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* 	border: 1px solid #000; */
+	color: rgb(187, 169, 164);
+	transition: color .2s ease;
+}
+
+#product_list>.select_menu>ul>li:hover {
+	color: black;
+}
+
+.select_menu > ul li:nth-child(-n+3) {
+    border-right: 1px solid #efefef;
+}
+
+
+
+/************ ↑ select_menu  ************/
+
+/************ main 시작  ************/
+/* main {
+	background-color: green;
+		margin: 0 auto;
+	margin: 60px 0;
+	padding: 10px 0;
+} */
+
+.main_ct {
+		width: 80%;
+	/* 	height: 500px; */
+	/* border-top: 1px solid #efefef; */
+	border-bottom: 1px solid #efefef;
+	margin: 0 auto;
+	margin-bottom: 160px;
+}
+.main_ct > h3 {
+	font-size: 20px;
+}
+.ct_box_1 {
+	/* margin-bottom: 160px; */
+}
+.ct_box_2 {
+	/* margin-bottom: 100px; */
+}
+
+.main_ct h3 {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	margin: 20px 0;
+	border-top: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
+}
+
+.pd_list {
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	/* 	background-color: #ff0; */
+	/* padding: 10px 0; */
+	padding-top: 40px;
+	/* border-bottom: 1px solid #efefef; */
+}
+
+.pd_list>.pd {
+	/* min-width: 50px; */
+	/* 	height: 280px; */
+	margin: 0 10px;
+	/* background-color: #efdfdf; */
+	/* border: 1px solid #000; */
+	display: flex;
+	justify-content: end;
+}
+
+.pd_list > .pd > a {
+	text-align: center;
+	/* 	display: flex; */
+	/* 	justify-content: center; */
+	/* 	flex-direction: column; */
+
+}
+
+.pd_name {
+	margin-top: 5px;
+}
+
+.main_ct>.pd_list>.pd img {
+	width: 96%;
+	margin: 0 auto;
+}
+
+/********** main 끝 **********/
+
+/********** footer 시작 **********/
+footer {
+	/* height: 200px; */
+	min-height: 200px;
+	position: relative;
+	background-color: tan;
+	/* margin: 50px 0; */
+	/* margin-bottom: 10px; */
+	/* border-top: 1px solid #efefef; */
+	font-size: 14px;
+}
+
+footer > section {
+	border-top: 1px solid rgb(240, 232, 219);
+	border-bottom: 1px solid rgb(240, 232, 219);
+}
+section > .ft_info {
+	/* margin: 100px; */
+	/* margin-top: 10px; */
+	padding: 10px 0;
+	padding-left: 10px;
+	/* border: 1px solid #000; */
+}
+
+.info_3 {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	/* border: 1px solid #000; */
+}
+.info_3 > span {
+	/* opacity: 1; */
+	/* transition: opacity 0.3s ease; */
+	transition: color .2s ease;
+}
+.info_3 > span:hover {
+	/* opacity: .6; */
+	color: rgb(68, 68, 68);
+}
+/********** footer 끝 **********/
