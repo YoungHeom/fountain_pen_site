@@ -22,7 +22,7 @@ a {
 }
 
 /* h1 폰트 */
-header>h1, footer > .h1 {
+header > h1, footer .h1 {
 	font-family: "Poetsen One", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -303,7 +303,7 @@ main .ct2>div>.ct2_box a>img {
 footer {
 	/* height: 200px; */
 	/* 	min-height: 200px; */
-	position: relative;
+	/* position: relative; */
 	background-color: rgb(218, 191, 157);
 	/* margin: 50px 0; */
 	/* border-top: 1px solid #dfdfdf; */
@@ -311,7 +311,6 @@ footer {
 	border-radius: 30px 0 0 0;
 }
 
-/**** footer 시작 ****/
 footer * {
 	box-sizing: border-box;
 }
@@ -346,17 +345,26 @@ footer .bt_wrap {
 }
 
 /**** 푸터 내부 공통 설정 끝 ****/
+/* footer .ft_top 시작 */
+footer .ft_top {
+	position: relative;
+}
+footer .ft_top h1, footer .ft_top .icon {
+	position: absolute; top: 20px;
+}
 
-/* h1 태그 커스텀 시작 */
-footer .h1 {
+/* footer > .ft_top > h1 시작 */
+footer .ft_top .h1 {
 	height: 100px;
+	
 }
 
-footer h1 {
+footer .ft_top h1 {
 	font-size: 26px;
-	position: absolute; left: 30px; top: 20px;
 }
-/* h1 태그 커스텀 끝 */
+/* footer > .ft_top > h1 끝 */
+/* footer .ft_top 끝 */
+
 /*** top_wrap 시작 ***/
 .top_wrap {
 	height: 150px;
