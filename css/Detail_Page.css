@@ -1,8 +1,5 @@
 /* 노멀라이즈 */
-body,
-ul,
-li,
-h1 {
+body, h1, h2, h3, h4, ul, li {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -13,9 +10,6 @@ a {
 	text-decoration: none;
 }
 
-* {
-	box-sizing: border-box;
-}
 
 /* 폰트 설정 */
 /* 전체 폰트 */
@@ -32,7 +26,7 @@ footer {
 }
 
 /* h1 폰트 */
-header>h1 {
+header > h1, footer .h1 {
 	font-family: "Poetsen One", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -52,7 +46,7 @@ body>#product_page {
 
 /********** header **********/
 header {
-	height: 200px;
+	height: 180px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -106,7 +100,7 @@ header>.top_menu>div {
 .menu_box_1>ul>li {
 	width: 150px;
 	height: 40px;
-	margin: 10px;
+	margin: 8px;
 	/* 	padding: 5px; */
 	display: flex;
 	justify-content: center;
@@ -226,7 +220,7 @@ select {
 	margin-left: 40px;
 }
 
-.Favorite_item {
+.favorite_item {
 	display: inline-block;
 	width: 50px;
 	height: 50px;
@@ -239,7 +233,7 @@ select {
 	float: right;
 }
 
-.Favorite_item>i {
+.favorite_item>i {
 	position: absolute;
 	top: 52%;
 	left: 50%;
@@ -249,7 +243,7 @@ select {
 	transition: font-size .3s;
 }
 
-.Favorite_item:hover>i {
+.favorite_item:hover>i {
 	font-size: 22px;
 }
 
@@ -318,12 +312,12 @@ select {
 		width: 100px;
 	}
 
-	.Favorite_item {
+	.favorite_item {
 		width: 30px;
 		height: 30px;
 		margin-bottom: 1px;
 	}
-	.Favorite_item:hover>i {
+	.favorite_item:hover>i {
 		font-size: 14px;
 	}
 }
@@ -348,47 +342,109 @@ hr {
 /********** footer 시작 **********/
 footer {
 	/* height: 200px; */
-	min-height: 200px;
-	position: relative;
-	background-color: tan;
+	/* 	min-height: 200px; */
+	/* position: relative; */
+	background-color: rgb(218, 191, 157);
 	/* margin: 50px 0; */
 	/* border-top: 1px solid #dfdfdf; */
 	font-size: 14px;
+	border-radius: 30px 0 0 0;
+}
+
+footer * {
+	box-sizing: border-box;
 }
 
 footer>section {
-	border-top: 1px solid rgb(240, 232, 219);
-	border-bottom: 1px solid rgb(240, 232, 219);
+	/* 	width: 1850px; */
+	width: 94%;
+	/* 	border-top: 1px solid rgb(240, 232, 219); */
+	/* 	border-bottom: 1px solid #E5D5BD; */
+	/* 	padding-bottom: 10px; */
+	margin: 0 auto;
 }
 
-section>.ft_info {
-	/* margin: 100px; */
-	/* margin-top: 10px; */
-	padding: 10px 0;
-	padding-left: 10px;
-	/* border: 1px solid #000; */
+footer>section:last-child {
+	border-top: 1px solid #E5D5BD;
 }
 
-/* section > .ft_info > div {
-	border: 1px solid #000;
-} */
-
-.info_3 {
-	position: absolute;
-	bottom: 10px;
-	left: 10px;
-	/* border: 1px solid #000; */
+footer .top_wrap,
+footer .bt_wrap {
+	font-size: 10px;
+}
+/* footer .txt_box */
+.txt_box {
+	display: flex;
+	position: relative;
 }
 
-.info_3>span {
-	/* opacity: 1; */
-	/* transition: opacity 0.3s ease; */
-	transition: color .2s ease;
+.flex-grow-1 {
+	flex-grow: 1;
 }
 
-.info_3>span:hover {
-	/* opacity: .6; */
-	color: rgb(68, 68, 68);
+/**** 푸터 내부 공통 설정 끝 ****/
+/* footer .ft_top 시작 */
+footer .ft_top {
+	position: relative;
+}
+footer .ft_top h1, footer .ft_top .icon {
+	position: absolute; top: 40px;
 }
 
+/* footer > .ft_top > h1 시작 */
+footer .ft_top .h1 {
+	height: 100px;
+	
+}
+
+footer .ft_top h1 {
+	font-size: 26px;
+}
+/* footer > .ft_top > h1 끝 */
+/* footer .ft_top 끝 */
+
+/*** top_wrap 시작 ***/
+.top_wrap {
+	height: 150px;
+}
+
+.top_wrap>.txt_box>.box_l {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+
+.top_wrap>.txt_box>.box_l>div {
+	margin-top: 2px;
+}
+
+/*** top_wrap 끝 ***/
+
+/**** section bt_wrap ****/
+.bt_wrap {
+	height: 70px;
+	/* 	border-top: 2px solid pink; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/**** bt_wrap > box_l 시작  ****/
+.bt_wrap>.txt_box>.box_l {
+	width: 288px;
+	display: flex;
+	/* 	background-color: pink; */
+	justify-content: space-between;
+}
+
+
+/**** box_l 끝 ****/
+
+/**** box_r 시작****/
+.box_r {
+	text-align: end;
+}
+
+/**** box_r 끝 ****/
+/**** bt_wrap 끝 ****/
 /********** footer 끝 **********/

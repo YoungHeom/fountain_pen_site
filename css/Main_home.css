@@ -42,7 +42,7 @@ body {
 } */
 /********** header **********/
 header {
-	height: 200px;
+	height: 180px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -326,8 +326,6 @@ footer>section {
 
 footer>section:last-child {
 	border-top: 1px solid #E5D5BD;
-	border-bottom: 1px solid #000;
-	/* 확인용 */
 }
 
 footer .top_wrap,
@@ -350,7 +348,7 @@ footer .ft_top {
 	position: relative;
 }
 footer .ft_top h1, footer .ft_top .icon {
-	position: absolute; top: 20px;
+	position: absolute; top: 40px;
 }
 
 /* footer > .ft_top > h1 시작 */
