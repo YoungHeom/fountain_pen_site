@@ -46,7 +46,7 @@ body>#product_page {
 
 /********** header **********/
 header {
-	height: 180px;
+	height: 160px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -58,6 +58,7 @@ header {
 header>h1 {
 	font-size: 80px;
 	white-space: nowrap;
+	padding-bottom: 10px;
 }
 
 .top_menu {
