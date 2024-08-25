@@ -1,0 +1,448 @@
+/* 노멀라이즈 */
+body, h1, h2, h3, h4, ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* 폰트 설정 */
+/* 전체 폰트 */
+#home_1>main, #home_1>footer, .top_menu {
+	box-sizing: border-box;
+	font-family: "Noto Sans KR", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
+	color: #110B08;
+}
+
+/* h1 폰트 */
+header > h1, footer .h1 {
+	font-family: "Poetsen One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #0C0806;
+}
+
+/* 커스텀 */
+body {
+	background-color: #fffef8;
+}
+
+/* body>#home_1 {
+	width: 95%;
+	height: 5000px;
+	margin: 0 auto;
+	background-color: #dfdfdf;
+} */
+/********** header **********/
+header {
+	height: 90px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	position: relative;
+	border-bottom: 1px solid #dfdfdf;
+	box-sizing: border-box;
+}
+
+header>h1 {
+	font-size: 48px;
+	padding-left: 16px;
+	white-space: nowrap;
+	padding-bottom: 10px;
+}
+
+.top_menu {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 14px;
+}
+
+.top_menu>a:first-child,
+.top_menu>a:last-child {
+	margin: 0 4px;
+}
+
+/* .top_right {
+	margin: 0 2px;
+} */
+
+header>.top_menu>div {
+	display: flex;
+	align-items: center;
+	padding-bottom: 1px;
+}
+
+/********** header 끝 **********/
+
+/********** main **********/
+main {
+	width: 100%;
+	/* height: 4320px; */
+	/* margin-top: 50px; */
+	margin-bottom: 150px;
+}
+
+main>.ct2,
+main>.ct3 {
+	margin: 240px auto 0 auto;
+
+}
+
+.ct2 img,
+.ct3 img {
+	border-radius: 2px;
+}
+
+/**** main > section ct1 ****/
+main>.ct1 {
+	display: flex;
+	justify-content: center;
+	/* border: 1px solid #000; */
+	background-color: #fffce8;
+	/* margin-top: 110px; */
+}
+
+.ct1_main {
+	/* width: 75%; */
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	/* background-color: #fffce8; */
+	border-radius: 2px;
+	/* border: 1px solid #000; */
+}
+
+.ct1_main>div {
+	/* width: 1920px; */
+	width: 100%;
+	/* width: 100vh; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* border: 1px solid #000; */
+}
+
+.ct1_box {
+	width: 50%;
+	text-align: center;
+}
+
+.box_1 a>img {
+	/* display: block; */
+	width: 100%;
+	vertical-align: middle;
+	border-radius: 2px 0 0 2px;
+}
+
+.section .ct1_main .ct1_box h2 {
+	font-size: 36px;
+}
+
+/****** main > section ct1 ******/
+
+/****** main> .section2 ******/
+/* .section.ct2 {
+	width: 1280px;
+} */
+main .ct2 {
+	display: flex;
+	justify-content: center;
+	/* width: 95%; */
+	/* margin: 0 auto; */
+	/* border: 1px solid #000; */
+}
+.section .ct2_div_wrap {}
+
+/* main .ct2>div,
+main .ct2>div>.div_ct2_box {
+	display: flex;
+} */
+
+main .ct2>div {
+	width: 65%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+
+}
+
+main .ct2>div>.div_ct2_box {
+	display: flex;
+	flex-direction: column;
+	margin: 0 10px;
+}
+
+main .ct2>div>.div_ct2_box a {
+	display: block;
+	width: 100%;
+	display: flex;
+	/* background-color: pink; */
+	margin: 0 auto;
+	margin-top: 16px;
+	font-weight: bold;
+	/* outline: 2px solid #000; */
+	font-size: 18px;
+}
+
+main .ct2>div>.div_ct2_box a>img {
+	height: 100%;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	transition: opacity 0.3s ease;
+	border-radius: 4px;
+}
+
+.ct2>div>.div_ct2_box:hover img {
+	opacity: 0.8;
+	filter: grayscale(10%);
+}
+
+.ct2>div>.div_ct2_box:hover>div>a {
+	transition: opacity 0.3s ease;
+}
+
+.ct2>div>.div_ct2_box:hover>div>a {
+	opacity: 0.8;
+}
+
+/****** main> .section2 끝 ******/
+
+/****** main > .section3 ******/
+/* .ct3 {
+	width: 95%;
+} */
+
+section.ct3 h3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	margin: 12px 0;
+}
+
+.ct3_img_wrap {
+	display: flex;
+	margin: 0 10px;
+}
+
+/****** img_area 시작 ******/
+.ct3>.ct3_img_wrap>.img_area {
+	width: 60%;
+	/* outline: 2px solid #dfdf0f; */
+	margin: 10px;
+	flex-wrap: wrap;
+}
+
+.ct3>.ct3_img_wrap>.img_area img {
+	width: 100%;
+}
+
+/**** img_area 애니메이션 설정 ****/
+.img_area>a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.img_area>a>img {
+	transition: transform .3s ease;
+}
+
+.img_area>a:hover>img {
+	transform: scale(1.02);
+}
+
+.img_area>a::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	transition: background-color 0.3s ease;
+	z-index: 1;
+}
+
+.img_area>a:hover::before {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.img_area>a::after {
+	content: "Lorem Ipsum";
+	color: lightgoldenrodyellow;
+	position: absolute;
+	right: 2%;
+	bottom: 2%;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	z-index: 1;
+}
+
+.img_area>a:hover::after {
+	opacity: 1;
+}
+
+/**** img_area 애니메이션 설정 ****/
+/****** img_area 끝 ******/
+
+
+/****** main > .section3 끝 ******/
+/********** main 끝 **********/
+
+/********** footer 시작 **********/
+footer {
+	/* height: 320px; */
+	/* 	min-height: 200px; */
+	background-color: rgb(218, 191, 157);
+	font-size: 16px;
+	border-radius: 30px 0 0 0;
+}
+
+footer * {
+	box-sizing: border-box;
+}
+
+footer>section {
+	width: 94%;
+	margin: 0 auto;
+}
+
+footer>section:last-child {
+	border-top: 1px solid #E5D5BD;
+}
+
+footer .top_wrap, footer .bt_wrap {
+	font-size: 11px;
+}
+/* footer .txt_box */
+.txt_box {
+	display: flex;
+	position: relative;
+}
+
+.flex-grow-1 {
+	flex-grow: 1;
+}
+
+/**** 푸터 내부 공통 설정 끝 ****/
+/* footer .ft_top 시작 */
+footer .ft_top {
+	position: relative;
+}
+footer .ft_top h1, footer .ft_top .icon {
+	position: absolute; top: 40px;
+}
+
+/* footer > .ft_top > h1 시작 */
+footer .ft_top .h1 {
+	height: 100px;
+	
+}
+
+footer .ft_top h1 {
+	font-size: 26px;
+	cursor: default;
+}
+/* footer > .ft_top > h1 끝 */
+/* footer .ft_top 끝 */
+
+/*** top_wrap 시작 ***/
+.top_wrap {
+	height: 150px;
+}
+
+.top_wrap>.txt_box>.box_l {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+
+.top_wrap>.txt_box>.box_l>div {
+	margin-top: 2px;
+}
+
+/*** top_wrap 끝 ***/
+
+/**** section bt_wrap ****/
+.bt_wrap {
+	height: 70px;
+	/* 	border-top: 2px solid pink; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/**** bt_wrap > box_l 시작  ****/
+.bt_wrap>.txt_box>.box_l {
+	width: 288px;
+	display: flex;
+	/* 	background-color: pink; */
+	justify-content: space-between;
+}
+
+
+/**** box_l 끝 ****/
+
+/**** box_r 시작****/
+.box_r {
+	text-align: end;
+}
+
+/**** box_r 끝 ****/
+/**** bt_wrap 끝 ****/
+/********** footer 끝 **********/
+
+
+@media ( max-width: 768px ) {
+	.section .ct1_main .ct1_box h2 {
+		font-size: 24px;
+	}
+	main .ct2>div {
+		width: 75%;
+	}
+	main .ct2>div>.div_ct2_box div a {
+		font-size: 14px;
+	}
+
+
+	/* 콘텐츠3 */
+	
+	.section > .ct3_box {
+		flex-direction: column;
+		align-items: center;
+		/* gap: ; */
+		display: flex;
+	}
+	/* 콘텐츠3 끝 */
+
+	/* section.ct3 */
+	section.ct3 h3 {
+		font-size: 26px;
+	}
+	/* section.ct3 */
+}
+
+
+
+
+
+.section > .img_box_wrap > .img_box > div {
+	width: 960px;
+	height: 200px;
+	background-color: #efefef;
+	margin-top: 10px;
+}
